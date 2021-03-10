@@ -1,0 +1,45 @@
+==================
+Startup Exercise 1
+==================
+
+Initial Setup
+=============
+
+	* Download Visual Studio Community edition
+	* Run the Visual Studio Installer
+	* Install all needed MVC modules
+	
+MVC Development Exercise
+========================
+
+	* Create a new MVC web application for ASP .Net framework (not core)
+		
+On the ViewModel side
+---------------------
+
+	* Create a new folder named ViewModels inside the solution folder
+	* Create a new C# class inside the ViewModels folder named HelloWorldCppViewModel
+	* The class has one String property ServerMessage with get and set access
+		
+On the View side
+----------------
+
+	* Create a new folder inside the Views folder and name it after the controller name from last step
+	* Create a new View inside the new folder with the name "Index"
+		* From the template drop down menu chose Empty
+	* The view expects the view model created from the previous section (HelloWorldCppViewModel)
+	* The view has one form that contains one submit button and an optional label
+	* The form calls a controller action named Run
+	* The label should only be visible if the provided model has a set non-empty ServerMessage property
+	
+On the Controller side
+----------------------
+
+	* Add a new Controller in the Controllers folder of the solution
+		* Chose either an Empty controller or a controller with read/wirte access
+	* Remove all controller Actions (methods) from the newly created controller class
+	* Add a new Action named Index that returns a view with the same name with an empty viewmodel
+	* Add a new Action named Run
+		* The action should return the view "Index"
+		* This time the ViewModel should have the ServerMesage property set to "Hello World!"
+		

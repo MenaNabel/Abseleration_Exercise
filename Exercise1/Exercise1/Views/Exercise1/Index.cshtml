@@ -1,0 +1,17 @@
+﻿@model Exercise1.ViewModels.HelloWorldCppViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<form action="~/Exercise1/Run">
+    <div class="form-group">
+        @{
+            if (Model.ServerMessage != null)
+            {
+                <label for="@Model.ServerMessage">Server Message</label>
+            }
+        }
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
