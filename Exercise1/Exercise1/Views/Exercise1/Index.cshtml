@@ -7,9 +7,9 @@
 <form action="~/Exercise1/Run">
     <div class="form-group">
         @{
-            if (Model.ServerMessage != null)
+            if (!string.IsNullOrEmpty(Model.ServerMessage))
             {
-                <label for="@Model.ServerMessage">Server Message</label>
+                <label for="@Model.ServerMessage">@Model.ServerMessage</label>
             }
         }
     </div>
