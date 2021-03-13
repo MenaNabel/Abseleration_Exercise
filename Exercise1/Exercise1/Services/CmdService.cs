@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
+using System.Linq;
+using System.Web;
 
-namespace Exercise1.Cpp
+namespace Exercise1.Services
 {
-    public class CompilerCpp
+    public class CmdService
     {
-        public  static string CompileCppFile(string file)
+        public string CmdCommand(string dir, string command)
         {
             try
             {
@@ -17,17 +19,18 @@ namespace Exercise1.Cpp
                 process.StartInfo.RedirectStandardOutput = true;
                 process.StartInfo.UseShellExecute = false;
                 process.Start();
-                process.StandardInput.WriteLine(file);
+                process.StandardInput.WriteLine(dir);
                 process.StandardInput.WriteLine("g++ TestFile.cpp -o  TestFile.exe");
                 process.StandardInput.Flush();
                 process.StandardInput.Close();
                 process.WaitForExit();
-                return file;
+                return process.StandardOutput.ReadToEnd().Trim();
             }
             catch (Exception e)
             {
                 return e.Message;
             }
+
         }
     }
 }

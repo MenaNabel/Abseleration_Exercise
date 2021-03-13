@@ -14,7 +14,7 @@ namespace Exercise1.Cpp
         {
             try
             {
-                string path = "E:\\Projects\\Apseleration\\Exercise1\\TestFile.cpp";
+                string path = @"E:\TestFile.cpp";
                 TextWriter tw = new StreamWriter(path, true);
                 tw.WriteLine(@"#include <iostream>
 using namespace std;
@@ -25,7 +25,7 @@ int main() {
             }
 ");
                 tw.Close();
-                return path;
+                return @"E:";
             }
             catch(Exception e)
             {

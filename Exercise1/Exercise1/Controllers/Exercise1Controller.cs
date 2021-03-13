@@ -16,7 +16,7 @@ namespace Exercise1.Controllers
         {
             string path =  CompilerCpp.CompileCppFile(Generator.GenerateCppFile());
             return View("Index", new HelloWorldCppViewModel()
-            {  ServerMessage = ProgramRunner.RunProgram("")});
+            {  ServerMessage = ProgramRunner.RunProgram(path) });
         }
     }
 }
