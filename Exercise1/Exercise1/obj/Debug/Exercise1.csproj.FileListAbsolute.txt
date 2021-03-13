@@ -76,3 +76,6 @@ E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\obj\Debug\Exercise1.cspro
 E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\obj\Debug\Exercise1.csproj.CopyComplete
 E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\obj\Debug\Exercise1.dll
 E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\obj\Debug\Exercise1.pdb
+E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Management.Automation.dll
+E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\Microsoft.Management.Infrastructure.dll
+E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Management.Automation.xml

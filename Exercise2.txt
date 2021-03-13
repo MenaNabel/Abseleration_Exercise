@@ -1,0 +1,44 @@
+==================
+Startup Exercise 2
+==================
+
+Initial Setup
+=============
+
+	* Make sure the setup steps of Exercise 1 are completed successfully
+	* Install MSYS2 cpp compiler for windows
+		* Download executable from: https://repo.msys2.org/distrib/x86_64/msys2-x86_64-20201109.exe
+		* Follow C++ compiler installation (MinGw) as outlined in https://www.msys2.org/
+	* Make sure the path to the gcc and g++ folder is added to the PATH variable
+	
+Code generation
+===============
+
+	* Create a folder named Cpp inside the solution from Exercise 1
+	* Create a new C# class named "Generator" inside the newly created folder
+	* Add a static method named GenerateCppFile
+		* The method would generate a valid cpp file
+		* The method would return the path to the created file as a string
+	* Generate a valid cpp application that prints "Hello World!"
+	
+Code Compilation
+================
+	* Create C# class to represent a cpp compiler
+	* The class has one method named CompileCppFile
+		* The method takes the path of the cpp file as an argument
+		* The method would compile the cpp file and produce a program with the same name of the file
+		* The method returns the path to executable file
+		
+Program Execution
+=================
+	* Create a C# class named "ProgramRunner"
+	* Add a static method called "RunProgram"
+		* The method takes the path to the program as an input
+		* The method executes the program and reads what the program writes to the standard output
+		* The method returns what the program has written
+	
+Client Output
+=============
+	* Use the previous classes to generate the ServerMessage for the Run action in HelloWorldCppController
+		* The message would be the outcome of running the generated and compiled program from sections "Code Generation" and "Code Compilation"
+		

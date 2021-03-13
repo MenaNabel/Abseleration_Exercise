@@ -1,4 +1,6 @@
-﻿using Exercise1.ViewModels;
+﻿using Exercise1.Cpp;
+using Exercise1.ViewModels;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace Exercise1.Controllers
@@ -12,8 +14,9 @@ namespace Exercise1.Controllers
         }
         public ActionResult Run()
         {
+            string path =  CompilerCpp.CompileCppFile(Generator.GenerateCppFile());
             return View("Index", new HelloWorldCppViewModel()
-            {  ServerMessage = "Hello World!" });
+            {  ServerMessage = ProgramRunner.RunProgram("")});
         }
     }
 }
