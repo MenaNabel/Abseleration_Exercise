@@ -16,7 +16,7 @@ namespace Exercise1.Cpp
             process.StartInfo.UseShellExecute = false;
             process.Start();
 
-            process.StandardInput.WriteLine(prog);
+            process.StandardInput.WriteLine("cd " + prog);
             process.StandardInput.WriteLine("TestFile.exe");
             process.StandardInput.Flush();
             process.StandardInput.Close();

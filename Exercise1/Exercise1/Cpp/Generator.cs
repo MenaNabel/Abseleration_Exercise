@@ -14,8 +14,10 @@ namespace Exercise1.Cpp
         {
             try
             {
-                string path = @"E:\TestFile.cpp";
-                TextWriter tw = new StreamWriter(path, true);
+                
+                string path = @"C:\Users\" + Environment.UserName + @"\Desktop";
+                string file = path + @"\TestFile.cpp";
+                TextWriter tw = new StreamWriter(file, true);
                 tw.WriteLine(@"#include <iostream>
 using namespace std;
  
@@ -25,7 +27,7 @@ int main() {
             }
 ");
                 tw.Close();
-                return @"E:";
+                return path;
             }
             catch(Exception e)
             {

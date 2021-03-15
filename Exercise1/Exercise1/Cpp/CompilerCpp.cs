@@ -17,7 +17,7 @@ namespace Exercise1.Cpp
                 process.StartInfo.RedirectStandardOutput = true;
                 process.StartInfo.UseShellExecute = false;
                 process.Start();
-                process.StandardInput.WriteLine(file);
+                process.StandardInput.WriteLine("cd "+ file);
                 process.StandardInput.WriteLine("g++ TestFile.cpp -o  TestFile.exe");
                 process.StandardInput.Flush();
                 process.StandardInput.Close();
