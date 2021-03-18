@@ -15,7 +15,7 @@ namespace Exercise1.Cpp
             try
             {
                 
-                string path = @"C:\Users\" + Environment.UserName + @"\Desktop";
+                string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
                 string file = path + @"\TestFile.cpp";
                 TextWriter tw = new StreamWriter(file, true);
                 tw.WriteLine(@"#include <iostream>
