@@ -85,3 +85,7 @@ E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Web.Http.WebHo
 E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Net.Http.Formatting.xml
 E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Web.Http.xml
 E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Web.Http.WebHost.xml
+E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\EntityFramework.dll
+E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\EntityFramework.SqlServer.dll
+E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\EntityFramework.xml
+E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\EntityFramework.SqlServer.xml
