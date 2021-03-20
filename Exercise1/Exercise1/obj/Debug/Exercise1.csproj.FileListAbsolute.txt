@@ -79,3 +79,9 @@ E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\obj\Debug\Exercise1.pdb
 E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Management.Automation.dll
 E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\Microsoft.Management.Infrastructure.dll
 E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Management.Automation.xml
+E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Net.Http.Formatting.dll
+E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Web.Http.dll
+E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Web.Http.WebHost.dll
+E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Net.Http.Formatting.xml
+E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Web.Http.xml
+E:\Projects\Apseleration\Exercise1\Exercise1\Exercise1\bin\System.Web.Http.WebHost.xml

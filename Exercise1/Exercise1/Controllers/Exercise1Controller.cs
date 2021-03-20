@@ -1,4 +1,5 @@
 ﻿using Exercise1.Cpp;
+using Exercise1.Services;
 using Exercise1.ViewModels;
 using System.Web.Mvc;
 namespace Exercise1.Controllers
@@ -12,9 +13,7 @@ namespace Exercise1.Controllers
         }
         public ActionResult Run()
         {
-            string path = Generator.GenerateCppFile();
-            string compilePath = CompilerCpp.CompileCppFile(path);
-            string word = ProgramRunner.RunProgram(compilePath);
+            string word = APIServices.readOutput();
             return View("Index", new HelloWorldCppViewModel()
             { ServerMessage = word }) ;
         }
