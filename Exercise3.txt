@@ -1,0 +1,43 @@
+==================
+Startup Exercise 3
+==================
+
+Initial Setup
+=============
+
+	* Make sure the initial setup from the previous two exercises is done successfully
+	* Download and Install any of the following Microsoft SQL server:
+		* Developer edition: https://go.microsoft.com/fwlink/?linkid=866662
+		* Express edition: https://go.microsoft.com/fwlink/?linkid=866658
+	* From the NuGet package manager install the latest stable Entity Framework
+		
+Database Setup
+==============
+
+	* From the SQL Server Object Explorer expand the local MS SQL Instance
+	* Create a new database database named ProgramBase
+	* Create a new connection to the newly created database from the Server Explorer
+		* If not already inserted use "(localdb)\MSSqlLocalDb" as your server
+		* Chose the data base you created form the previous step
+	* Add a table named Programs inside the newly created data base
+		* The table has a primary key called ProgramId that is automatially incremented
+		* THe table has one Text attribute named ProgramText
+	* Insert the program text that was hard coded in the previous exercise as a record in the programs table
+		* Use SQL script to insert the code 
+		* Hint: Use CHAR(10) to insert line breaks in your program
+		
+Project Setup
+=============
+
+	* Add a new Folder named Database inside your solution
+	* Add a new Entity Data Model from the newly created database
+		* The model should be named ProgramsEntities
+	* The model should import all tables in the database
+		
+Generator
+=========
+
+	* The GenerateCppFile() method should now use the code inside the database instead of the hard coded string from Exercise 2
+	
+
+	
